@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "acts_as_oauth_accessible"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{enables your Rails models to OAuth-access}
+    gem.description = %Q{Rails plugin that enables your models to access OAuth services}
     gem.email = "cesare@mayverse.jp"
     gem.homepage = "http://github.com/cesare/acts_as_oauth_accessible"
     gem.authors = ["SAWADA Tadashi"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_dependency "oauth", ">= 0.4.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
