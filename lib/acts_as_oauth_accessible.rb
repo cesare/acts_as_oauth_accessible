@@ -12,6 +12,10 @@ module ActsAsOauthAccessible
   module ClassMethods
     def acts_as_oauth_consumer
       self.send :include, InstanceMethods
+      self.class_eval do
+        has_many :consumer_tokens, :as => :oauth_accessible
+        has_many :consumer_access_tokens, :as => :oauth_accessible
+      end
     end
   end
   
