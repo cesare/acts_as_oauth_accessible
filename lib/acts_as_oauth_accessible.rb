@@ -11,7 +11,7 @@ module ActsAsOauthAccessible
   
   module ClassMethods
     def acts_as_oauth_consumer
-      self.include InstanceMethods
+      self.send :include, InstanceMethods
     end
   end
   
@@ -41,9 +41,8 @@ module ActsAsOauthAccessible
     
   end
   
-  def self.included(receiver)
-    receiver.extend         ClassMethods
-    receiver.send :include, InstanceMethods
+  def self.included(base)
+    base.send :extend, ClassMethods
   end
   
   class Config
@@ -78,3 +77,5 @@ module ActsAsOauthAccessible
     end
   end
 end
+
+ActiveRecord::Base.send :include, ActsAsOauthAccessible
