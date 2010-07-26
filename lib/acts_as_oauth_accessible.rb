@@ -1,6 +1,6 @@
 require 'oauth'
 
-module ActsAsOAuthAccessible
+module ActsAsOauthAccessible
   def self.init(hash)
     @config = Config.new(hash)
   end
