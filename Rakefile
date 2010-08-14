@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'rake'
+gem 'rspec', '>= 1.2.9', '< 1.9.9'
 
 begin
   require 'jeweler'

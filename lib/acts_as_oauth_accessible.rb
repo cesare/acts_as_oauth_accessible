@@ -8,6 +8,9 @@ end
 module ActsAsOauthAccessible
   def self.init(hash)
     @config = Config.new(hash)
+    if defined? ActiveRecord::Base
+      ActiveRecord::Base.send :include, ActsAsOauthAccessible
+    end
   end
   
   def self.config
@@ -86,5 +89,3 @@ module ActsAsOauthAccessible
     end
   end
 end
-
-ActiveRecord::Base.send :include, ActsAsOauthAccessible
