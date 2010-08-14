@@ -1,5 +1,10 @@
 require 'oauth'
 
+if defined?(Rails) && Rails.version >= '3.0.0'
+  require File.join(File.dirname(__FILE__), "acts_as_oauth_accessible", "railtie")
+end
+
+
 module ActsAsOauthAccessible
   def self.init(hash)
     @config = Config.new(hash)

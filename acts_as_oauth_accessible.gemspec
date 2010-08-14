@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["SAWADA Tadashi"]
-  s.date = %q{2010-07-23}
+  s.date = %q{2010-08-14}
   s.description = %q{Rails plugin that enables your models to access OAuth services}
   s.email = %q{cesare@mayverse.jp}
   s.extra_rdoc_files = [
@@ -17,16 +17,15 @@ Gem::Specification.new do |s|
      "README.rdoc"
   ]
   s.files = [
-    ".document",
-     ".gitignore",
-     "LICENSE",
+    "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "acts_as_oauth_accessible.gemspec",
+     "init.rb",
      "lib/acts_as_oauth_accessible.rb",
-     "spec/acts_as_oauth_accessible_spec.rb",
-     "spec/spec.opts",
-     "spec/spec_helper.rb"
+     "lib/acts_as_oauth_accessible/railtie.rb",
+     "rails/init.rb"
   ]
   s.homepage = %q{http://github.com/cesare/acts_as_oauth_accessible}
   s.rdoc_options = ["--charset=UTF-8"]
