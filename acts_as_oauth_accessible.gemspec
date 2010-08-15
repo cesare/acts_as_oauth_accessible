@@ -25,12 +25,14 @@ Gem::Specification.new do |s|
      "generators/acts_as_oauth_accessible_generator.rb",
      "generators/templates/config/oauth_providers.yml",
      "generators/templates/db/migration.rb",
+     "generators/templates/models/consumer_token.rb",
      "init.rb",
      "lib/acts_as_oauth_accessible.rb",
      "lib/acts_as_oauth_accessible/railtie.rb",
      "lib/generators/acts_as_oauth_accessible_generator.rb",
      "lib/generators/templates/config/oauth_providers.yml",
      "lib/generators/templates/db/migration.rb",
+     "lib/generators/templates/models/consumer_token.rb",
      "rails/init.rb"
   ]
   s.homepage = %q{http://github.com/cesare/acts_as_oauth_accessible}

@@ -16,6 +16,10 @@ class ActsAsOauthAccessibleGenerator < Rails::Generators::Base
     copy_file('config/oauth_providers.yml', 'config/oauth_providers.yml')
   end
   
+  def copy_models
+    template 'models/consumer_token.rb', 'app/models/consumer_token.rb'
+  end
+  
   def copy_migration_file
     migration_template 'db/migration.rb', 'db/migrate/create_consumer_tokens'
   end
