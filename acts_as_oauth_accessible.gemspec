@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["SAWADA Tadashi"]
-  s.date = %q{2010-08-14}
+  s.date = %q{2010-08-15}
   s.description = %q{Rails plugin that enables your models to access OAuth services}
   s.email = %q{cesare@mayverse.jp}
   s.extra_rdoc_files = [
@@ -25,6 +25,9 @@ Gem::Specification.new do |s|
      "init.rb",
      "lib/acts_as_oauth_accessible.rb",
      "lib/acts_as_oauth_accessible/railtie.rb",
+     "lib/generators/acts_as_oauth_accessible_generator.rb",
+     "lib/generators/templates/config/oauth_providers.yml",
+     "lib/generators/templates/db/migration.rb",
      "rails/init.rb"
   ]
   s.homepage = %q{http://github.com/cesare/acts_as_oauth_accessible}

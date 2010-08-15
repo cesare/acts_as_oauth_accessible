@@ -1,0 +1,21 @@
+development:
+  twitter:
+    key: YOUR_CONSUMER_KEY
+    secret: YOUR_CONSUMER_SECRET
+    site: http://twitter.com
+  google:
+    key: YOUR_CONSUMER_KEY
+    secret: YOUR_CONSUMER_SECRET
+    site: http://www.google.com
+
+
+test:
+  twitter:
+    key: YOUR_CONSUMER_KEY
+    secret: YOUR_CONSUMER_SECRET
+    site: http://twitter.com
+  google:
+    key: YOUR_CONSUMER_KEY
+    secret: YOUR_CONSUMER_SECRET
+    site: http://www.google.com
+
