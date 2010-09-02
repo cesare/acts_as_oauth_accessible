@@ -73,14 +73,7 @@ module ActsAsOauthAccessible
         @name   = name
         @key    = entry['key']
         @secret = entry['secret']
-        options = {}
-        entry.each do |k,v|
-          key = k.to_sym
-          unless key == :key || key == :secret
-            options[key] = v
-          end
-        end
-        @options = options
+        @options = entry['options']
       end
       
       def create_consumer
